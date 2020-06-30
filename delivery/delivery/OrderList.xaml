@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="delivery.OrderList">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Список заказов"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding Orders}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.2" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Label Text="Номер заказа" FontSize="18" Grid.Column="1" Grid.Row="0" />
+                                    <Label Text="{Binding orderNumber}" FontSize="18" Grid.Column="2" Grid.Row="0" />
+                                    <Label Text="Статус" FontSize="18" Grid.Column="1" Grid.Row="1" />
+                                    <Label Text="{Binding status}" FontSize="12" Grid.Column="2" Grid.Row="1" />
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

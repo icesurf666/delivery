@@ -11,7 +11,7 @@ namespace delivery
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MasterDetailPage1();
         }
 
         protected override void OnStart()
