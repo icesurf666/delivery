@@ -33,7 +33,7 @@ namespace delivery
             {
                 MenuItems = new ObservableCollection<MasterDetailPage1MenuItem>(new[]
                 {
-                    new MasterDetailPage1MenuItem { Id = 0, Title = "Главная" },
+                    new MasterDetailPage1MenuItem { Id = 0, Title = "Главная", TargetType = typeof(MainPage) },
                     new MasterDetailPage1MenuItem { Id = 1, Title = "Список заказов", TargetType = typeof(OrderList) },
                     new MasterDetailPage1MenuItem { Id = 2, Title = "Карта", TargetType = typeof(Mapxaml) },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "Заказ", TargetType = typeof(TabbedPage1) },
