@@ -7,7 +7,7 @@
             <Label Text="Список заказов"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
-            <ListView ItemsSource="{Binding Orders}" HasUnevenRows="True">
+            <ListView ItemsSource="{Binding Orders}" HasUnevenRows="True" ItemTapped="onItemClick">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

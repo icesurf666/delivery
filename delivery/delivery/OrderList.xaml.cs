@@ -30,5 +30,9 @@ namespace delivery
             };
             this.BindingContext = this;
         }
+        public async void onItemClick(object sender, ItemTappedEventArgs e)
+        {
+            await Navigation.PushAsync(new TabbedPage1());
+        }
     }
 }

@@ -36,8 +36,7 @@ namespace delivery
                     new MasterDetailPage1MenuItem { Id = 0, Title = "Главная" },
                     new MasterDetailPage1MenuItem { Id = 1, Title = "Список заказов", TargetType = typeof(OrderList) },
                     new MasterDetailPage1MenuItem { Id = 2, Title = "Карта", TargetType = typeof(Mapxaml) },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "Page 4" },
-                    new MasterDetailPage1MenuItem { Id = 4, Title = "Page 5" },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "Заказ", TargetType = typeof(TabbedPage1) },
                 });
             }
             
